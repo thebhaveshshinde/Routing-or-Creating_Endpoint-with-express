@@ -54,7 +54,7 @@ App.put("/usersss/:id" , ( req , res ) => {
     console.log(users_put)
 })
 
-// Handling the wrong Request send by the client with 4040 status code
+// Handling the wrong Request send by the client with 404 status code
 App.use(( req , res )=>{ 
     res.status(404)
     .send("<html><head></head><body><h1>404 Not Found!</h1></body></html>")
