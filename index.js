@@ -5,9 +5,9 @@ const express = require("express")
 const App = express()
 
 // importing the database module containing the users data
-const users_get = require("../Database/users_get.js")
-const users_post = require("../Database/users_post.js")
-const users_put = require("../Database/users_put.js")
+const users_get = require("./users_get.js")
+const users_post = require("./users_post.js")
+const users_put = require("./users_put.js")
 
 // Route to handle the Get Request by the client
 App.get("/", (req, res) => {
