@@ -15,7 +15,7 @@ App.get("/", (req, res) => {
         .send("<html><head></head><body><h1>👋Hello Everyone!👋</h1></body></html>")
 })
 
-App.get("/users" , ( res , res ) => {
+App.get("/users" , ( req , res ) => {
     res.status(200)
     .json(users_get)
  })
